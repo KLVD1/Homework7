@@ -16,8 +16,9 @@ public class Main {
 
         int distanceTraveled=0; // Пройденная дистанция
         int marathon=42195; // Дистанция марафона.
-        int remainingDistance=marathon-distanceTraveled;
+
         do {
+            int remainingDistance=marathon-distanceTraveled;
             System.out.println("Держитесь! Осталось "+ remainingDistance +" метров");
             distanceTraveled=distanceTraveled+500;
         }
@@ -26,6 +27,7 @@ public class Main {
         System.out.println("\n\tЗадание#2. Версия2\n");
 
         for (int distance=0; distance < marathon; distance=distance+500){
+            int remainingDistance=marathon-distance;
             System.out.println("Держитесь! Осталось "+ remainingDistance +" метров");
         }
 
